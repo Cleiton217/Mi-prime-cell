@@ -1,140 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>m.estiloconforto - Loja de acessórios</title>
+  <title>MI PRIME CELL</title>
   <style>
-    /* Reset básico */
-    * {
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background-color: #ff6f61;
-      padding: 20px;
+      background-color: #f4f4f4;
       text-align: center;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 2px;
+      padding: 30px 10px;
     }
-    main {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 15px;
+    header h1 {
+      background: linear-gradient(90deg, #000000, #ff6600);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      font-size: 3rem;
+      margin: 0;
     }
-    .banner {
-      width: 100%;
-      height: 300px;
-      background: url('https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    h2 {
-      margin-bottom: 15px;
-      color: #ff6f61;
+    header p {
+      color: #333;
+      margin-top: 5px;
+      font-size: 1.2rem;
     }
     .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
+      padding: 20px;
     }
-    .produto {
-      background: white;
-      border-radius: 10px;
+    .card {
+      background-color: white;
+      border: 2px solid #1e90ff;
+      border-radius: 15px;
       padding: 15px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      width: 200px;
       text-align: center;
     }
-    .produto img {
-      max-width: 100%;
+    .card img {
+      width: 100%;
       border-radius: 10px;
-      margin-bottom: 10px;
     }
-    .produto h3 {
-      margin-bottom: 8px;
-      font-size: 1.2rem;
-      color: #444;
-    }
-    .produto p {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 12px;
-    }
-    .produto button {
-      background-color: #ff6f61;
+    .btn {
+      background-color: #1e90ff;
       color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    .produto button:hover {
-      background-color: #e55b4d;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
     }
     footer {
-      text-align: center;
-      padding: 20px;
       background-color: #333;
       color: white;
-      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
     footer a {
-      color: #ff6f61;
+      color: #1e90ff;
       text-decoration: none;
-      margin: 0 8px;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
-
   <header>
-    m.estiloconforto
+    <h1>MI PRIME CELL</h1>
+    <p>Sua loja de celulares e acessórios em geral</p>
   </header>
-
-  <main>
-    <div class="banner"></div>
-
-    <section>
-      <h2>Produtos em Destaque</h2>
-      <div class="produtos">
-        <div class="produto">
-          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Capinha Rosa" />
-          <h3>Capinha Rosa</h3>
-          <p>Design elegante e proteção total para seu celular.</p>
-          <button onclick="window.open('https://wa.me/5561982112467?text=Olá! Tenho interesse na Capinha Rosa.', '_blank')">Comprar</button>
-        </div>
-        <div class="produto">
-          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Fone Bluetooth" />
-          <h3>Fone Bluetooth</h3>
-          <p>Som de alta qualidade sem fios, perfeito para o dia a dia.</p>
-          <button onclick="window.open('https://wa.me/5561982112467?text=Olá! Tenho interesse no Fone Bluetooth.', '_blank')">Comprar</button>
-        </div>
-        <div class="produto">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Película Protetora" />
-          <h3>Película Protetora</h3>
-          <p>Resistência contra riscos para a tela do seu celular.</p>
-          <button onclick="window.open('https://wa.me/5561982112467?text=Olá! Tenho interesse na Película Protetora.', '_blank')">Comprar</button>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <section class="produtos">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250?text=Película+Fosca" alt="Película Fosca" />
+      <h3>Película Fosca</h3>
+      <p>R$ 19,90</p>
+      <a class="btn" href="https://wa.me/5561981671052?text=Olá! Tenho interesse na Película Fosca." target="_blank">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250?text=Película+de+Cerâmica" alt="Película de Cerâmica" />
+      <h3>Película de Cerâmica</h3>
+      <p>R$ 24,90</p>
+      <a class="btn" href="https://wa.me/5561981671052?text=Olá! Tenho interesse na Película de Cerâmica." target="_blank">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250?text=Capa+Silicone" alt="Capa Silicone" />
+      <h3>Capa Silicone</h3>
+      <p>R$ 29,90</p>
+      <a class="btn" href="https://wa.me/5561981671052?text=Olá! Tenho interesse na Capa Silicone." target="_blank">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250?text=Carregador+Rápido" alt="Carregador Rápido" />
+      <h3>Carregador Rápido</h3>
+      <p>R$ 49,90</p>
+      <a class="btn" href="https://wa.me/5561981671052?text=Olá! Tenho interesse no Carregador Rápido." target="_blank">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250?text=Fone+Bluetooth" alt="Fone Bluetooth" />
+      <h3>Fone Bluetooth</h3>
+      <p>R$ 89,90</p>
+      <a class="btn" href="https://wa.me/5561981671052?text=Olá! Tenho interesse no Fone Bluetooth." target="_blank">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x250?text=Suporte+Veicular" alt="Suporte Veicular" />
+      <h3>Suporte Veicular</h3>
+      <p>R$ 39,90</p>
+      <a class="btn" href="https://wa.me/5561981671052?text=Olá! Tenho interesse no Suporte Veicular." target="_blank">Comprar</a>
+    </div>
+  </section>
   <footer>
     Siga-nos no Instagram:
-    <a href="https://instagram.com/m.estiloconforto" target="_blank">@m.estiloconforto</a>
+    <a href="https://instagram.com/miprimecell" target="_blank">@miprimecell</a>
   </footer>
-
 </body>
 </html>
